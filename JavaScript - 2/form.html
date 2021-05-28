@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width" , initial-scale=1.0">
+    <link rel="stylesheet" href="./css/design.css">
+    <script src="javascript/validation.js"></script>
+    <title>Assignment - 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form target="_blank" id="from-submit" action="welcome.html" method="POST" onsubmit="return checkForm(this)">
+                <h3>JavaScript Form Submission</h3>
+
+                <label>Name:
+                    <br>
+                    <input type="text" id="name" maxlength="3" onkeypress="ValidateName()">
+                    <span id="msg1" style="color: black;"></span>
+                </label><br>
+
+                <label>Email ID:
+                    <br>
+                    <input type="email" id="email_id" onkeypress="ValidateEmail()">
+                    <span id="msg2" style="color: black;"></span>
+                </label><br>
+
+                <label>Password:
+                    <br>
+                    <input type="password" id="password" maxlength="6" onkeypress="PwdCheck()">
+                    <span id="msg3" style="color: black;"></span>
+                </label><br>
+
+                <label>Confirm Password:
+                    <br>
+                    <input type="password" id="confirm_password" maxlength="6" onkeyup="Check()">
+                    <span id="msg4" style="color: black;"></span>
+                </label>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <span>
+                    <input type="checkbox" name="terms" onclick="CheckBox()">
+                    <label for="check_box">
+                        By signing up to this you agree to your Terms of Service.
+                    </label>
+                </span><br><br>
+
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
